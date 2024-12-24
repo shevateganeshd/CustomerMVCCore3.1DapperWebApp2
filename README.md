@@ -3,7 +3,9 @@
 **Startup.cs**
 
 public void ConfigureServices(IServiceCollection services)
+<br/>
 {
+<br/>
     //B
     services.AddControllersWithViews();
 
@@ -13,6 +15,7 @@ public void ConfigureServices(IServiceCollection services)
 
     // Register the CustomerRepository
     services.AddScoped<CustomerRepository>();
+<br/>
 }
 
 <br/>
@@ -20,7 +23,9 @@ public void ConfigureServices(IServiceCollection services)
 **CustomerRepository.cs**
 
 public class CustomerRepository
+<br/>
 {
+<br/>
     private readonly IDbConnection _dbConnection;
 
     public CustomerRepository(IDbConnection dbConnection)
@@ -60,4 +65,5 @@ public class CustomerRepository
         const string query = "DELETE FROM Customer WHERE Id = @Id";
         return await _dbConnection.ExecuteAsync(query, new { Id = id });
     }
+<br/>
 }
