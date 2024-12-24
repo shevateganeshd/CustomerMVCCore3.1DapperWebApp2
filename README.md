@@ -6,7 +6,7 @@ public void ConfigureServices(IServiceCollection services)
 <br/>
 {
 <br/>
-    //To includes both APIs and Razor Views 
+    //To includes both APIs and Razor Views<br/> 
     services.AddControllersWithViews();
 
 
@@ -25,6 +25,7 @@ public void ConfigureServices(IServiceCollection services)
 public class CustomerRepository
 <br/>
 {
+<br/>
     private readonly IDbConnection _dbConnection;
 
     public CustomerRepository(IDbConnection dbConnection)
