@@ -5,9 +5,7 @@
 public void ConfigureServices(IServiceCollection services)
 <br/>
 {
-<br/>
-    //B
-<br/>
+<br/>    
     services.AddControllersWithViews();
 
     // Configure your database connection string here
