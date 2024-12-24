@@ -6,9 +6,9 @@ public void ConfigureServices(IServiceCollection services)
 <br/>
 {
 <br/>
-    //B
-<br/>
+    //To includes both APIs and Razor Views 
     services.AddControllersWithViews();
+
 
     // Configure your database connection string here
     services.AddScoped<IDbConnection>(db => new SqlConnection(
